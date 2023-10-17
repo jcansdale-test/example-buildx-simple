@@ -39,4 +39,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-          provenance: true
+          provenance: false
+          platforms: linux/386,linux/amd64
